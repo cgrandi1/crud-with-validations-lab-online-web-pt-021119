@@ -1,0 +1,16 @@
+
+<table>
+  <tbody>
+
+
+    <% @songs.each do |song| %>
+        <tr>
+          <%= content_tag :td, song.title %>
+          <td><%=song.release_year%></td>
+          <td><%=song.released%></td>
+          <td><%=song.artist_name%></td>
+          <td><%=song.genre%></td>
+        </tr>
+    <% end %>
+    </tbody
+</table>
